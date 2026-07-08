@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pakhi Banchalia</title>
+    <link rel="icon" type="image/png" href="assets/robo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Lora:ital,wght@0,400;0,500;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-nav" aria-label="Page navigation">
+      <a class="nav-name" href="#intro">Pakhi Banchalia</a>
+      <nav class="section-nav" aria-label="Sections">
+        <a class="section-nav-link" href="#intro" data-section-link="intro">
+          <span class="nav-star">✦</span><span>about</span>
+        </a>
+        <a class="section-nav-link" href="#work" data-section-link="work">
+          <span class="nav-star">✦</span><span>so far</span>
+        </a>
+        <a class="section-nav-link" href="#notes" data-section-link="notes">
+          <span class="nav-star">✦</span><span>notes</span>
+        </a>
+        <a class="section-nav-link" href="#contact" data-section-link="contact">
+          <span class="nav-star">✦</span><span>contact</span>
+        </a>
+        <div class="nav-robot" aria-hidden="true">
+          <img src="assets/robo.png" alt="" />
+        </div>
+      </nav>
+    </header>
+
+    <main class="page-shell">
+      <section class="page-section intro-section" id="intro" data-nav-section>
+        <div class="intro-layout">
+          <div class="intro-photo">
+            <img src="assets/me.jpeg" alt="Pakhi" onerror="this.closest('.intro-photo').style.display='none'" />
+          </div>
+          <div class="intro-text">
+            <h1>Hi, I'm Pakhi</h1>
+            <p class="intro-copy">
+              I build AI agents with something like hunger, rest, and a social life.
+              The idea is simple: an agent whose behavior comes from what it needs
+              is easier to understand, and to trust, than one patched into behaving
+              after the fact. That question, safety by design rather than by
+              afterthought, runs through everything here: homeostatic RL, intrinsic
+              motivation, and now social drives in multi-agent systems.
+            </p>
+            <p class="intro-copy intro-copy-meta">
+              Currently a research intern at Aalto University. MSc student at TU Dresden.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="page-section" id="work" data-nav-section>
+        <p class="eyebrow">So far</p>
+        <div class="entry-list">
+          <article class="entry-item">
+            <div>
+              <h3>Social Motivation · Aalto University</h3>
+              <p class="entry-meta">Now · Espoo, Finland</p>
+              <p>What makes agents cooperate, compete, or just ignore each other? Building multi-agent worlds to find out which social drives actually matter.</p>
+            </div>
+          </article>
+          <article class="entry-item">
+            <div>
+              <h3>Homeostatic RL · CMC Lab</h3>
+              <p class="entry-meta">Bernstein 2025 / BrainBody 2025 oral</p>
+              <p>Gave RL agents hunger and fatigue, then watched what they learn, and what they forget, as their world changes. Survival turns out to be a demanding teacher.</p>
+            </div>
+          </article>
+          <article class="entry-item">
+            <div>
+              <h3>Homeostatic Crafter · Lossfunk</h3>
+              <p class="entry-meta">Ongoing research</p>
+              <p>When food, energy, and safety all compete for an agent's attention, what wins, and what quietly breaks? Extending Crafter to find out.</p>
+            </div>
+          </article>
+          <article class="entry-item">
+            <div>
+              <h3>CAN · ICDSA 2025</h3>
+              <p class="entry-meta">Published · Springer</p>
+              <p>A network that grows and prunes its own connections, so it can keep learning new things without trampling what it already knows.</p>
+            </div>
+          </article>
+          <article class="entry-item">
+            <div>
+              <h3>GSoC 2024 · INCF</h3>
+              <p class="entry-meta">Open source</p>
+              <p>Simulated how a worm's nervous system wires itself up from scratch: neural cellular automata, graph networks, and a summer of humility before C. elegans.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="page-section" id="notes" data-nav-section>
+        <p class="eyebrow">Notes</p>
+        <div class="writing-list">
+          <article class="writing-item">
+            <a href="https://medium.com/orel-group/developing-adaptive-neural-networks-growing-graphs-for-dynamic-data-representation-286d9ad6c24c" target="_blank" rel="noreferrer">Developing Adaptive Neural Networks: Growing Graphs for Dynamic Data Representation</a>
+            <span>Medium</span>
+          </article>
+        </div>
+      </section>
+
+      <footer class="page-section contact-section" id="contact" data-nav-section>
+        <p class="eyebrow">Contact</p>
+        <p class="contact-copy">Say hi. Research collaborations, interesting problems, and good song recommendations are all welcome.</p>
+        <div class="contact-links">
+          <a href="mailto:pakhibanchalia2418@gmail.com">Email</a>
+          <a href="https://github.com/Pakhi07" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://x.com/PakhiBanchalia" target="_blank" rel="noreferrer">X</a>
+          <a href="https://pakhi07.github.io/cv/" target="_blank" rel="noreferrer">CV →</a>
+        </div>
+      </footer>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
